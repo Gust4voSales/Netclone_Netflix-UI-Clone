@@ -1,6 +1,6 @@
 # Netclone 
 Clone da interface gráfica da Netflix utilizando apenas Python e Kivy. 
-- Requisitos: Python 3, Kivy e suas dependências 
+- Requisitos: Python 3, Kivy e suas dependências(https://kivy.org/doc/stable/gettingstarted/installation.html)
 - O que aprendi: Desenvolvimento de um aplicativo com interface gráfica dinâmica com Python (Kivy) e integrar diversas ferramentas que o 
 Kivy oferece. Introdução ao desenvolvimento Mobile com Python (Kivy).
 
