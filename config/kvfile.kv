@@ -10,6 +10,33 @@
     ResultPage:
         name: 'resultpage'
 ########################################################################################################################
+<UserInput@TextInput>:
+    size_hint: None, None
+    size: 280, 40
+    font_size: 20
+    multiline: False
+    background_color: .2, .2, .2, 1
+    foreground_color: 1, 1, 1, 1
+    background_normal: app.roundborder
+    background_active: app.roundborder
+
+<PopupWarning>
+    size_hint: None, None
+    size: 232, 200
+    title: 'Login ou senha incorretos!'
+    separator_color: 1, 0.3, 0.2, 1
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            size_hint: 1, .7
+            text: 'Desculpe, não encontramos uma conta com esse endereço de email. Tente novamente.\n'
+            text_size: self.size
+        Button:
+            pos_hint: {'center_x': .5}
+            size_hint: .5, .3
+            text: 'Ok'
+            on_press: root.dismiss()
+
 <LoginScreen>:
     canvas:
         Color:
@@ -86,34 +113,6 @@
             Label:
 				id: dica
                 pos_hint: {'center_x': 0.5, 'center_y': .05}
-
-
-<UserInput@TextInput>:
-    size_hint: None, None
-    size: 280, 40
-    font_size: 20
-    multiline: False
-    background_color: .2, .2, .2, 1
-    foreground_color: 1, 1, 1, 1
-    background_normal: app.roundborder
-    background_active: app.roundborder
-<PopupWarning>
-    size_hint: None, None
-    size: 232, 200
-    title: 'Login ou senha incorretos!'
-    separator_color: 1, 0.3, 0.2, 1
-    BoxLayout:
-        orientation: 'vertical'
-        Label:
-            size_hint: 1, .7
-            text: 'Desculpe, não encontramos uma conta com esse endereço de email. Tente novamente.\n'
-            text_size: self.size
-        Button:
-            pos_hint: {'center_x': .5}
-            size_hint: .5, .3
-            text: 'Ok'
-            on_press: root.dismiss()
-
 ########################################################################################################################
 <CustomButton@Button>:
     size_hint: None, 1
